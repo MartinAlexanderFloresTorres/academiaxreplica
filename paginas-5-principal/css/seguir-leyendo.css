@@ -1,0 +1,261 @@
+/* BLOG PARRAFO */
+:root{
+    --rojizo: #f56464;
+    --negro:  #000000;
+    --blanco: #ffffff;
+    --gris: #e4e4e4;
+    --negroOscuro: #181818;
+    --azul: #0066ff;
+}
+
+.blog-parrafo{
+    width: 78%;
+    height: 100%;
+    background: var(--blanco);
+    box-shadow: 0 0 5px 0 var(--gris);
+    padding: 20px 20px;
+    margin-right: 10px;
+}
+.blog-parrafo h1{
+    font-size: 48px;
+}
+.blog-parrafo p{
+    line-height: 30px;
+}
+.blog-font{
+    font-weight: 100;
+}
+.blog-parrafo ul{
+    margin-left: 34px;
+    line-height: 27px;
+}
+.blog-parrafo ol{
+    margin: 34px;
+    line-height: 27px;
+}
+.blog-parrafo span{
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.blog-p-a{
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 4px 0 var(--gris);
+    padding: 45px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.blog-p-a p{
+    margin-bottom: 40px;
+}
+.blog-p-a a{
+    background: var(--negro);
+    padding: 15px 20px;
+    border-radius: 28px;
+    font-weight: bold;
+    color: var(--blanco);
+}
+.blog-p-a a:hover,
+.blog-p-a button:hover{
+    background: var(--blanco);
+    color: var(--negro);
+    border: 2px solid var(--negro);
+    cursor: pointer;
+}
+.blog-p-a form{
+    display: flex;
+    flex-direction: column;
+}
+.blog-p-a form input{
+    width: 100%;
+    height: 50px;
+    border: 1px solid var(--gris);
+    font-size: 16px;
+    color: var(--negroOscuro);
+    outline: none;
+    margin-bottom: 30px;
+    padding: 15px;
+}
+.blog-btn{
+    width: 100%;
+    height: 100%;
+}
+.blog-p-a form button{
+    padding: 15px 20px;
+    background: var(--negro);
+    color: var(--blanco);
+    font-weight:bold;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 28px;
+}
+.blog-p-a form .parrafo-font{
+    color: gray;
+}
+
+/* CURSOS DESTACADOS 
+-----------------------------------------*/
+
+.destacados{
+    width: 100%;
+    height: 100%;
+    border-bottom: 10px solid var(--azul);
+}
+.destacados h1{
+    text-align: center;
+    font-size: 40px;
+}
+.destacados-title{
+    font-size: 30px;
+    text-align: start;
+}
+.destacados-contenedor{
+    width: 90%;
+    height: 100%;
+    margin: 100px auto;
+    display: flex;
+    gap: 30px;
+}
+.destacados-cursos:hover{
+    cursor: pointer;
+    margin-top:-15px ;
+    transition: .5s all ease;
+}
+.destacados-cursos{
+    box-shadow: 0 0 4px  0 var(--negroOscuro);
+    padding: 20px;
+    line-height: 27px;
+    color: black;
+    border-radius: 10px;
+}
+.destacados-cursos img{
+    width: 100%;
+}
+@media screen and (max-width: 778px){
+    .blog-parrafo{
+        width: 100%;
+        margin-top: 200px;
+    }
+    .blog-parrafo h1{
+        font-size: 26px;
+    }
+    .blog-parrafo p{
+        line-height: 23px;
+        font-size: 14px;
+    }
+    .blog-parrafo ul,
+    .blog-parrafo ol{
+        margin-left: 34px;
+        line-height: 20px;
+        font-size: 14px;
+    }
+    
+    .blog-parrafo span{
+        font-size: 14px;
+        font-weight: 200;
+    }
+    .destacados-contenedor{
+        display: flex;
+        flex-direction: column;
+    }
+    .destacados h1{
+        font-size: 23px;
+    }
+    .destacados-cursos h1, p, h4{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 449px) {
+
+    .destacados h1{
+        font-size: 15px;
+        margin: 0;
+    }
+    .blog-p-a{
+        padding: 15px;
+    }
+    .blog-p-a p{
+        margin-bottom: 15px;
+    }
+    .blog-p-a a{
+        padding: 10px 10px;
+        font-size: 10px;
+    }
+    .blog-p-a form button{
+    padding: 10px 10px;
+    font-size: 10px;
+    }   
+    .blog-p-a form input{
+        height: 35px;
+        font-size: 13px;
+        padding: 10px;
+    }
+    .blog-p-a p, h3,
+    .parrafo-font{
+        font-size: 13px;
+        line-height: 18px;
+    }
+}
+@media screen and (max-width: 241px) {
+ 
+    .blog-main{
+        margin: 0 5px;
+        width: 100%;
+    }
+    .blog-font{
+        font-weight: bold;
+    }
+    .blog-parrafo{
+        width: 100%;
+        margin: 0;
+        margin-top: 140px;
+        padding: 8px;
+    }
+    .blog-parrafo h1{
+        font-size: 10px;
+    }
+    .blog-parrafo p{
+        line-height: 15px;
+        font-size: 10px;
+    }
+    .blog-parrafo ul,
+    .blog-parrafo ol{
+        margin-left: 12px;
+        line-height: 15px;
+        font-size: 10px;
+    }
+    
+    .blog-parrafo span{
+        font-size: 10px;
+    }
+    .destacados h1{
+        font-size: 13px;
+    }
+    .destacados-cursos h1, p, h4{
+        font-size: 10px;
+    }
+    .blog-p-a form h3{
+        font-size: 10px;
+    }
+    .blog-p-a{
+        padding: 10px;
+    }
+    .blog-p-a a{
+        padding: 6px 6px;
+        font-size: 8px;
+    }
+    .blog-p-a form button{
+    padding: 7px 10px;
+    font-size: 10px;
+    }   
+    .blog-p-a form input{
+        height: 20px;
+        font-size: 10px;
+        padding: 8px;
+    }
+    .destacados-cursos{
+        line-height: normal;
+    }
+}

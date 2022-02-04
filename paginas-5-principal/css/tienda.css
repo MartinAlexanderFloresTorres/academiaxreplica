@@ -1,0 +1,38 @@
+:root{
+    --negro:  #000000;
+}
+/* globales */
+a{
+    text-decoration: none;
+}
+
+.tienda{
+    padding-top: 150px;
+    text-align: center;
+    color:var(--negro);
+    letter-spacing: 4px;
+}
+.inicio{
+    background-image: url('../../img-conciertos/1.jpg')!important;
+}
+.destacados-contenedor{
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: 1fr;
+}
+@media (max-width: 778px) {
+ .tienda{
+    padding-top: 250px;
+    font-size: 15px;
+ }   
+}
+@media (max-width: 344px) {
+    .destacados-contenedor{
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+@media (max-width: 218px) {
+    .destacados-contenedor{
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+}

@@ -1,0 +1,131 @@
+:root{
+    --rojizo: #f56464;
+    --negro:  #000000;
+    --blanco: #ffffff;
+    --gris: #ecf0f1;
+    --grisclaro: rgb(184, 184, 184);
+    --negroOscuro: #181818;
+    --azul: #0066ff;
+}
+.inicio{
+    width: 100%;
+    height: 500px;
+    background-image: url('../../img-conciertos/6.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-bottom: 10px solid var(--negro);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 60px;
+    padding-top: 200px;
+}
+.inicio-introduccion{
+    display: flex;
+    justify-content: center;
+}
+.contacto{
+    width: 100%;
+    height: 100%;
+    background: var(--gris);
+    color: var(--negro);
+    border-bottom: 10px solid var(--azul);
+}
+.contacto-form{
+    width: 45%;
+    height: 700px;
+    margin: auto auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.contacto-title{
+    width: 100%;
+    height: 150px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    line-height: 30px;
+}
+.contacto-title h1{
+    margin-bottom: 10px;
+}
+.contacto-title p{
+    text-align: center;
+}
+
+.contacto-form form{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+}
+.contacto-form form input{
+    height: 50px;
+    padding: 15px;
+    font-size: 15px;
+    outline: none;
+    border: 1px solid var(--grisclaro);
+}
+.contacto-form form textarea{
+    width: 100%;
+    height: 75px;
+    padding: 15px;
+    font-size: 15px;
+    outline: none;
+    border: 1px solid var(--grisclaro);
+}
+.contacto-form__button{
+    width: 100%;
+    height:  auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contacto-form__btn{
+    background: var(--negro);
+    color: var(--blanco);
+    font-weight: bold;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    width: 120px;
+    height: 40px;
+    border-radius: 25px;
+}
+.contacto-form__btn:hover{
+    background: var(--blanco);
+    color: var(--negro);
+    border: 2px solid var(--negro);
+    cursor: pointer;
+}
+@media screen and (max-width: 778px){
+ 
+    .contacto-form{
+        width: 90%;
+        height: 700px;
+        margin: auto auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (max-width: 256px){
+
+    .contacto-form__btn{
+        font-weight: bold;
+        font-size: 10px;
+        width: 100px;
+    }
+    .contacto-title{
+        line-height: 20px;
+    }
+}

@@ -1,0 +1,137 @@
+:root{
+    --rojizo: #f56464;
+    --negro:  #000000;
+    --blanco: #ffffff;
+    --gris: #ecf0f1;
+    --negroOscuro: #181818;
+    --azul: #0066ff;
+}
+
+.inicio{
+    background-image: url('../../img-conciertos/3.jpg');
+}
+
+/* ACERCA 
+--------------------------------------*/
+
+.acerca{
+    width: 100%;
+    height: 100%;
+    color: var(--negro);
+}
+.porque{
+    width: 100%;
+    height: 100%;
+    color: var(--negro);
+}
+.acerca-container{
+    width: 80%;
+    height: 100%;
+    margin: 10% auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    padding: 20px;
+}
+.acerca-parrafo{
+    width: 80%;
+    height: 100%;
+    line-height: 25px;
+}
+.acerca-parrafo i , a{
+    color: var(--azul);
+    text-decoration: none;
+}
+.acerca-parrafo h1{
+    margin: 20px 0px;
+}
+.acerca-parrafo p{
+    margin: 20px 0px;
+}
+
+.acerca-img{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.acerca-img img{
+    width: 100%;
+}
+
+/* PORQUE
+--------------------------------------------------- */
+
+.porque{
+    width: 100%;
+    height: 100%;
+    background: var(--gris);
+    border-bottom: 10px solid var(--azul);
+}
+.porque-parrafo{
+    width: 60%;
+    height: 100%;
+    margin: auto auto;
+    line-height: 30px;
+    text-align: center;
+    padding-top: 8%;
+    padding-bottom: 8%;
+}
+.porque-parrafo h1{
+    margin: 35px 0px;
+    font-size: 35px;
+}
+.porque-parrafo p{
+    margin: 20px 0;
+}
+.porque-a{
+    padding-top: 20px;
+    width: 100%;
+    height: 100%;
+}
+.porque-a a{
+    background: var(--negro);
+    color: var(--blanco);
+    font-weight: bold;
+    padding: 15px 30px;
+    border-radius: 30px;
+}
+.porque-a a:hover{
+    background: var(--blanco);
+    color: var(--negro);
+    border: 2px solid var(--negro);
+}
+
+/* MEDIA DESIGN WED */
+@media screen and (max-width: 778px){
+ 
+    .acerca-container{
+        width: 100%;
+        margin: auto auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 20px;  
+    }
+    .acerca-parrafo{
+        width: 100%;
+    }
+ 
+    .porque-parrafo{
+        width: 90%;
+    }
+    .porque-parrafo h1{
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 345px) {
+    .porque-a a{
+        padding: 8px 8px;
+        font-size: 8px;
+    }
+ 
+    .porque-parrafo{
+        line-height: 23px;
+    }
+}
